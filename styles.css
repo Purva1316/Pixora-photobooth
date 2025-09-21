@@ -484,6 +484,13 @@ body {
   .camera-container {
     max-width: 90%;
   }
+  .record { top: 120px; left: 60px; width: 100px; }
+  .fuji { top: 120px; left: 50%; transform: translateX(-50%); width: 100px; }
+  .bow { top: 120px; right: 60px; width: 90px; }
+  .disco { bottom: 60px; right: 80px; width: 120px; }
+  .strip { bottom: 80px; left: 200px; width: 100px; }
+  .flower { bottom: 200px; left: 65%; width: 70px; }
+  .stars { bottom: 10px; right: 250px; width: 80px; }
 }
 
 @media (max-width: 768px) {
@@ -502,6 +509,13 @@ body {
     font-size: 13px;
     padding: 8px 20px;
   }
+  .record { top: 100px; left: 40px; width: 90px; }
+  .fuji { top: 100px; left: 50%; transform: translateX(-50%); width: 90px; }
+  .bow { top: 100px; right: 40px; width: 80px; }
+  .disco { bottom: 50px; right: 60px; width: 100px; }
+  .strip { bottom: 60px; left: 150px; width: 90px; }
+  .flower { bottom: 180px; left: 60%; width: 60px; }
+  .stars { bottom: 5px; right: 200px; width: 70px; }
 }
 
 @media (max-width: 480px) {
@@ -524,6 +538,13 @@ body {
     font-size: 12px;
     padding: 4px 8px;
   }
+  .record { top: 80px; left: 20px; width: 60px; }
+  .fuji { top: 80px; left: 50%; transform: translateX(-50%); width: 60px; }
+  .bow { top: 80px; right: 20px; width: 50px; }
+  .disco { bottom: 40px; right: 40px; width: 80px; }
+  .strip { bottom: 40px; left: 80px; width: 60px; }
+  .flower { bottom: 140px; left: 55%; width: 50px; }
+  .stars { bottom: 0px; right: 150px; width: 50px; }
 }
  
   
