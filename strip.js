@@ -42,7 +42,7 @@ function drawStrip(callback) {
   }
 
   for (let i = 0; i < layout.photos; i++) {
-    let x = (canvas.width - layout.photoWidth) / 2;
+    let x = (canvas.width - layout.photoWidth) / 4;
     let y = startY;
     let src = photos[i] || "https://via.placeholder.com/170x130?text=Photo";
 
