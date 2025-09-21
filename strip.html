@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Strip</title>
+  <link rel="stylesheet" href="strip.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@600&family=Sacramento&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">pixora</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </nav>
+<div class="header">
+  <p>Customize Your Photo Strip</p>
+</div>
+  <div class="strip-container">
+    <!-- Strip Canvas -->
+    <canvas id="stripCanvas" width="200"></canvas>
+
+    <div class="controls">
+      <p>Frame colors</p>
+      <div class="button-group">
+        <button data-color="white" style="background:white;"></button>
+        <button data-color="black" style="background:black;"></button>
+        <button data-color="pink" style="background:pink;"></button>
+        <button data-color="lightblue" style="background:lightblue;"></button>
+        <input type="color" id="customColor" title="Choose custom color">
+      </div>
+    
+      <div class="section">
+        <p id="sticker-p">Stickers</p>
+        <div class="stickers" id="stickers">
+          <div class="sticker-option" data-sticker="🐱">🐱</div>
+          <div class="sticker-option" data-sticker="💖">💖</div>
+          <div class="sticker-option" data-sticker="⭐">⭐</div>
+          <div class="sticker-option" data-sticker="🎀">🎀</div>
+          <div class="sticker-option" data-sticker="✨">✨</div>
+          <div class="sticker-option" data-sticker="🌸">🌸</div>
+        </div>
+      </div>
+
+      <div class="action-buttons">
+        <button id="downloadStrip">Download Strip</button>
+        <button id="shareStrip">📤 Share Strip</button>
+        <button id="resetStrip">Reset</button>
+      </div>
+    </div>
+    
+    
+  </div>
+
+
+  <script src="strip.js"></script>
+</body>
+</html>

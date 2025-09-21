@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Layout - Pixora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="layoutstyle.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@600&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">pixora</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <!-- Choose Layout Section -->
+  <section class="choose-layout">
+    <div class="layout-container">
+      <h1>Choose Your Layout</h1>
+      <p>Select a photo strip layout before starting your Pixora session.</p>
+
+      <div class="layouts">
+
+        <div class="layout-card" data-poses="2">
+          <div class="layout-option">
+            <img src="assets/layout1.png" alt="Layout 1">
+          </div>
+          <h3>Layout 1</h3>
+          <p>Size 6 × 2 Strip<br>(2 Pose)</p>
+        </div>
+
+        <div class="layout-card" data-poses="3">
+            <div class="layout-option">
+              <img src="assets/layout2.png" alt="Layout 2">
+            </div>
+            <h3>Layout 2</h3>
+            <p>Size 6 × 2 Strip<br>(3 Pose)</p>
+        </div>
+
+        <div class="layout-card" data-poses="4">
+            <div class="layout-option">
+              <img src="assets/layout3.png" alt="Layout 3">
+            </div>
+            <h3>Layout 3</h3>
+            <p>Size 6 × 2 Strip<br>(4 Pose)</p>
+        </div>
+
+      </div>
+      <button id="nextBtn">NEXT</button>
+    </div>
+  </section>
+  <script src="script.js"></script>
+
+</body>
+</html>

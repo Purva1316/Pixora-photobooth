@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pixora Camera</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+     <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">pixora</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <div class="camera-page">
+  <!--Camera or Upload-->
+  <div class="option">
+    <div class="camera">
+        <button class="option-btn" id="cameraBtn">Camera</button>
+    </div>
+    <div class="upload">
+        <button class="option-btn" id="uploadBtn">Upload</button>
+    </div>
+  </div>
+
+
+  <!-- Camera Container -->
+  <div class="camera-container">
+    <video id="camera" autoplay playsinline></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <button id="fullscreenBtn">⛶</button>
+  </div>
+
+  <div class="controls">
+    <label for="timerSelect">Select Countdown Time:</label>
+    <select id="timerSelect">
+      <option value="3">3s</option>
+      <option value="5">5s</option>
+      <option value="10">10s</option>
+    </select>
+  </div>
+
+  <div id="countdownDisplay"></div>
+
+  <!-- Start Button -->
+  <button id="startBtn">START</button>
+
+  <!-- Filters -->
+  <div class="filters">
+    <p>Choose a filter for your photos!</p>
+    <div class="filter-options">
+      <button class="filter-btn" data-filter="none">No Filter</button>
+      <button class="filter-btn" data-filter="grayscale(1)">B&amp;W</button>
+      <button class="filter-btn" data-filter="sepia(1)">Sepia</button>
+      <button class="filter-btn" data-filter="contrast(1.2) saturate(1.3)">Vintage</button>
+      <button class="filter-btn" data-filter="brightness(1.2) saturate(1.1)">Soft</button>
+      <button class="filter-btn" data-filter="contrast(1.5) brightness(0.9)">Noir</button>
+      <button class="filter-btn" data-filter="saturate(2)">Vivid</button>
+    </div>
+  </div>
+
+  <!-- Preview -->
+  <div class="preview" id="preview"></div>
+
+  <div>
+    <button class="next-btn">NEXT</button>
+  </div>
+</div>
+<script src="camera.js"></script>
+</body>
+</html>
